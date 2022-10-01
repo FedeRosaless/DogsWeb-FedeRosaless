@@ -1,0 +1,35 @@
+
+.homedet{
+    background-color:rgba(0, 0, 0, 0.411);
+    width: fit-content;
+    border-radius: 6px;
+    margin-left: 20px;
+    margin-top: 0px;
+    transition: .2s;
+}
+
+.homedet:hover{
+    transform: scale(1.1);
+    transition: .2s ease-in-out;
+}
+
+.primer{
+    display:absolute;
+    margin-left: 320px;
+    padding-top: 5px;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: rgba(0, 0, 0, 0.418);
+    width: fit-content;
+    border-radius: 30px;
+}
+
+.imagen{
+    display:flex;
+    height: 400px;
+    width: 100%;
+}
+
+.notf{
+    margin-left: 200px;
+}

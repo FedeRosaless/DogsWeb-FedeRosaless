@@ -1,0 +1,22 @@
+.pagi{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    margin-top: 20px;
+    background-color: rgba(75, 75, 75, 0.521) ;
+
+}
+.pag{
+    cursor: pointer;
+    padding: 10px;  
+    opacity: .6;
+}
+.pag:hover{
+    opacity: 1;
+}
+.fondo{
+    background-image: url('https://img.freepik.com/vector-gratis/fondo-colorido-modelo-huellas-pata-perro-o-gato_1017-30662.jpg?w=2000');
+    /* background: rgb(255, 243, 82); */
+    background-size: contain;
+}

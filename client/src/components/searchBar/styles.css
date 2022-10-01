@@ -1,0 +1,25 @@
+.searchbar{
+    margin-top: 10px;
+    margin-top: 25px;
+    margin-left: 150px
+}
+
+.inp{
+    border-radius: 5px;
+    height: 27px;
+}
+
+.btnsearch{
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: rgb(255, 243, 82);
+    transition: .2s;
+    height: 30px;
+    margin-left: 10px;
+    width: 70px;
+}
+
+.btnsearch:hover{
+    transform: scale(1.1);
+    transition: .2s ease-in-out;
+}
