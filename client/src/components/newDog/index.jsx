@@ -149,7 +149,7 @@ useEffect(()=>{
             
             <div className="divForm">
             <form id='form' onSubmit={handleForm}>
-                <h2 className="h3">Nueva Raza:</h2>
+                <h2 className="h3">New Breed:</h2>
                 
                 <div className="errS"><input type="text" name='name' value={form.name} onChange={handleChange} placeholder='name' className="inpcrear" />
                 {error.name && <p className="exp">{error.name}</p>}</div>
