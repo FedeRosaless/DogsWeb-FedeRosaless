@@ -59,7 +59,7 @@ console.log(details)
                             <h2> <span className="car"> Lifespan:</span> <br /> {lifeSpanDog}.</h2>
                         </div>
                         <h2><span>
-                           <span className="car"> Temperaments:</span><ul className="temps"> {temperamentDog.map(t=><li key={t}>{t+" "}</li>)}</ul>.
+                           <span className="car"> Temperaments:</span><ul className="temps"> {temperamentDog.map(t=><li key={t}>{t+" "}</li>)}</ul>
                             {console.log(temperamentDog)}
                         </span></h2></div>
 
