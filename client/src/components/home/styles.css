@@ -5,7 +5,7 @@
 }
 
 .heder{
-    background: #000000;
+    background: #797979;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -55,7 +55,7 @@ a{
 }
 
 .ingraza{
-    background-color:rgb(255, 82, 255);
+    background-color:rgb(156, 163, 253);
     border-radius: 4px;
     margin-left: 190px;
     margin-top: 25px;
@@ -69,7 +69,7 @@ a{
 }
 
 .ingraza:hover{
-    transform: scale(1.1);
+    border: 1px solid white;
     transition: .2s ease all;
 }
 
@@ -83,34 +83,33 @@ a{
 }
 
 .select:hover{
-    background-color: rgb(255, 243, 82);
-    transform: scale(1.1);
+    border: 1px solid rgb(132, 161, 255);
     transition: .2s ease-in-out;
 }
 
 .clean{
-    background-color:rgb(108, 117, 248);
+    background-color:rgb(156, 163, 253);
     cursor: pointer;
     display: flex;
     align-items: center;
     margin-left: 100px;
     height: 35px;
     font-family: Arial, Helvetica, sans-serif;
-    transition: .2s;
+    transition: .2s ease-in-out;
     margin-top: 25px;
 }
 
 .clean:hover{
-    transform: scale(1.1);
+    border: 1px solid white;
     transition: .2s ease-in-out;
 }
 
 .image{
     height: 100px;
-    width: 130px;
+    width: fit-content;
     display:flexbox;
     margin-top: 20px;
-    border-radius: 40px;
+    border-radius: 50px;
     margin-bottom: -40px;
     margin-right: -25px;
 }

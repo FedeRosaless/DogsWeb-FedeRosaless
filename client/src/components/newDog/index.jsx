@@ -144,7 +144,7 @@ useEffect(()=>{
     },[dispatch])
 
     return (
-        <div className="fondo">
+        <div className="fondoNewDog">
             <Link to='/home' ><h1 className="lin">Home</h1></Link>
             
             <div className="divForm">
@@ -178,16 +178,16 @@ useEffect(()=>{
 
                 {error.temperaments && <p className="exp">{error.temperaments}</p>}
 
-                <button type="submit" form="form">Crear Raza</button>
+                <button type="submit" form="form">Create Breed</button>
                 </form>
                 <ul className="botonT">
                 {form.temperaments.map((c) => (
                   <div className="delT">
-                  <li><p>{c}</p>
                     <button className="botonTemp"
                         onClick={() => {
                             handleDelete(c)
                         }}> X </button>
+                  <li><p>{c}</p>
                     </li></div>
                 ))}</ul>
 

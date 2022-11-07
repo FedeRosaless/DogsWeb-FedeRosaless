@@ -1,6 +1,6 @@
 import React from "react";
 import './styles.css'
-export default function Paginado ({breadPerPage, allDog, paginado}){
+export default function Paginado ({breadPerPage, allDog, paginado, currentPage}){
     const pageNumber = []
 
     //en este arreglo se pushea cada vez que se divide allDog
@@ -19,7 +19,7 @@ export default function Paginado ({breadPerPage, allDog, paginado}){
                     pageNumber.map(n=>{
                         return(
                         <li className="pag" key={n}>
-                            <a onClick={()=>paginado(n)}>{n}</a>
+                            <a onClick={()=>paginado(n)} className={`${ n === currentPage ? "number" : "num"}`}>{n}</a>
                         </li>
                         )
                     })

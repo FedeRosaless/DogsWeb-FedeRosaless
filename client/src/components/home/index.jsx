@@ -105,7 +105,13 @@ function handleFilterByCreated(e){
                             </select>
                     </div>
                     </div>
-                </div>
+                </div> 
+                <Paginado
+            breadPerPage={breedPerPage}
+            allDog={allDog.length}
+            paginado={paginado}
+            currentPage={currentPage}
+            /> 
             <div className="divHome">
                 
                 {currentBreed.length?
@@ -117,19 +123,13 @@ function handleFilterByCreated(e){
                             temperament = {e.temperaments?.[0]?.name? e.temperaments.map(el=>el.name) : e.temperaments  }
                             key = {e.id}
                             id = {e.id}
-                            />
-                            
+                            />  
      ); })) : ( 
      //<h1>Loading... 🐶🐩</h1>
      <Loading/>
      ) 
                 } 
             </div>
-            <Paginado
-            breadPerPage={breedPerPage}
-            allDog={allDog.length}
-            paginado={paginado}
-            /> 
         </div> 
     )
 }

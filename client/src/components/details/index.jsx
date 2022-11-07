@@ -39,35 +39,33 @@ console.log(details)
     }
 }
 
-    return(
-        <div className="fondo" >
+    return(<div className="fondoDet" >
         <div>
             <Link to='/home'>
-                <h1 className="homedet">Home</h1>
+                <h2 className="homedet">Home</h2>
             </Link>
             <div >
                 {
-                    details.length?(<div className="primer">
+                    details.length?(
+                    <div className="primer">
                         <div className="segundo">
-                        <h1>{nameDog}</h1>
-                        <div className="imagen">
-                            <img src={imageDog}/>
-                        </div>
+                        <h1 className="nameDog">{nameDog}</h1>
                         </div>
                         <div className="detail">
+                            <div className="caracts">
                         <div >
-                            <h2>Height: {heightDog && heightDog[0]}-{heightDog && heightDog[1]} cms.</h2>
-                        </div>
-                        <div>
-                            <h2>Weight: {heightDog &&  weightDog[0]}-{weightDog && weightDog[1]} kg.</h2>
-                        </div>
-                        <div>
-                            <h2>Lifespan: {lifeSpanDog}.</h2>
+                            <h2> <span className="car"> Height:</span> <br /> {heightDog && heightDog[0]}-{heightDog && heightDog[1]} cms.</h2>
+                            <h2> <span className="car"> Weight:</span> <br /> {heightDog &&  weightDog[0]}-{weightDog && weightDog[1]} kg.</h2>
+                            <h2> <span className="car"> Lifespan:</span> <br /> {lifeSpanDog}.</h2>
                         </div>
                         <h2><span>
-                            Temperaments:<ul className="temps"> {temperamentDog.map(t=><li key={t}>{t+" "}</li>)}</ul>.
+                           <span className="car"> Temperaments:</span><ul className="temps"> {temperamentDog.map(t=><li key={t}>{t+" "}</li>)}</ul>.
                             {console.log(temperamentDog)}
-                        </span></h2>
+                        </span></h2></div>
+
+                        <div>
+                            <img className="imagen" src={imageDog}/>
+                            </div>
                         </div>
                     </div>
                     ) : (
